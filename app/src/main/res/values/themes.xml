@@ -1,0 +1,98 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <attr name="themeColor" format="color" />
+
+    <!--    用于启动屏-->
+    <style name="splash_screen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/art_start</item>
+        <item name="colorPrimary">#eeeeee</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--用于主页的抽屉-->
+    <style name="leaves" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#eeeeee</item>
+    </style>
+
+    <!--    for activity-->
+    <style name="coolGreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#eeeeee</item>
+        <item name="themeColor">@color/cool_green</item>
+        <item name="android:statusBarColor">#eeeeee</item>
+    </style>
+
+    <style name="coolRed" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#eeeeee</item>
+        <item name="themeColor">@color/cool_red</item>
+        <item name="android:statusBarColor">#eeeeee</item>
+    </style>
+
+    <style name="coolCyan" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#eeeeee</item>
+        <item name="themeColor">@color/mask_cyan</item>
+        <item name="android:statusBarColor">#eeeeee</item>
+    </style>
+
+    <style name="coolBlue" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#eeeeee</item>
+        <item name="themeColor">@color/blue</item>
+        <!--        <item name="android:statusBarColor">#eeeeee</item>-->
+    </style>
+
+    <style name="coolBlack" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#eeeeee</item>
+        <item name="themeColor">@color/black</item>
+        <item name="android:statusBarColor">#eeeeee</item>
+    </style>
+
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#eeeeee</item>
+        <item name="colorPrimaryDark">#eeeeee</item>
+        <item name="colorAccent">#eeeeee</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme" />
+
+    <style name="SeekBarStyle" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressTint">@color/cool_green</item> <!-- 设置进度条颜色为红色 -->
+        <item name="android:thumbTint">@color/cool_green</item> <!-- 设置拇指按钮颜色为绿色 -->
+    </style>
+
+
+    <style name="Colors" parent="Theme.Material3.DayNight">
+        <!--基本配色，@color就不放了，自己之后随意替换一些颜色就好-->
+        <item name="colorPrimary">#1193C2</item>
+        <item name="colorPrimaryVariant">#02719F</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/mask_pink</item>
+        <item name="colorSecondaryVariant">@color/mask_pink</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+    </style>
+
+
+    <style name="NoActionBarAndTransparent" parent="Colors">
+        <!--这里不能使用直接设置透明颜色的，要用那个window颜色的，不然导航栏颜色会没法改变到-->
+        <!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+        <!--        <item name="android:navigationBarColor">@android:color/transparent</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--        <item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

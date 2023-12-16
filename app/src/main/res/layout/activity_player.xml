@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.alterac.blurkit.BlurLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:blurkit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/blurLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    blurkit:blk_blurRadius="20"
+    blurkit:blk_downscaleFactor="0.05"
+    blurkit:blk_fps="40">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".activity.PlayerActivity">
+
+        <!--    第一行-->
+        <LinearLayout
+            android:id="@+id/linearLayoutFA"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/navPA"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="40dp"
+                android:background="@drawable/rounded_background"
+                android:drawableLeft="@drawable/music_icon"
+                android:elevation="4dp"
+                android:text="@string/world_of_music"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat,RtlHardcoded" />
+
+        </LinearLayout>
+        <!--专辑-->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/songImgPA"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/moni1"
+            app:layout_constraintBottom_toBottomOf="@+id/songInfoPA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/curved" />
+
+        <LinearLayout
+            android:id="@+id/songInfoPA"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/songNamePA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="@string/song_name"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artistPA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="@string/artist_name"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!--    播放的三个控件-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/previousBtnPA"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/notification_selector"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_skip_previous"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/playPauseBtnPA"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/notification_selector"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_pause"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/nextBtnPA"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/notification_selector"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_skip_next"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+        <!--    进度条-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvSeekBarStart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/start_tv"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBarPA"
+                style="@style/SeekBarStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/tvSeekBarEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/end_tv"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--    最后四个控件-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="@color/mask_pink"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/repeatBtnPA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/repeat_btn"
+                android:src="@drawable/repeat_icon"
+                app:tint="@color/Golden_yellow" />
+
+            <ImageButton
+                android:id="@+id/favouriteBtnPA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/favourites_btn"
+                android:src="@drawable/favourite_empty_icon"
+                app:tint="@color/Golden_yellow" />
+
+            <ImageButton
+                android:id="@+id/timerBtnPA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/timer_btn"
+                android:src="@drawable/timer_icon"
+                app:tint="@color/Golden_yellow" />
+
+            <ImageButton
+                android:id="@+id/shareBtnPA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/share_btn"
+                android:src="@drawable/share_icon"
+                app:tint="@color/Golden_yellow" />
+        </LinearLayout>
+    </LinearLayout>
+</io.alterac.blurkit.BlurLayout>

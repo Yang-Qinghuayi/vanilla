@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/nowPlayingFrag"
+    android:background="@drawable/rounded_background"
+    tools:context=".frag.NowPlaying">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/songImgNP"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="10dp"
+        android:src="@drawable/yqhy"
+        app:shapeAppearanceOverlay="@style/curved" />
+
+    <ImageButton
+        android:id="@+id/preBtnNP"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/playPauseBtnNP"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/pre_frag"
+        app:tint="@color/blue" />
+
+    <ImageButton
+        android:id="@+id/playPauseBtnNP"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/nextBtnNP"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/play_frag"
+        app:tint="@color/cool_red" />
+
+    <ImageButton
+        android:id="@+id/nextBtnNP"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toStartOf="@+id/songImgNP"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/next_frag"
+        app:tint="@color/cool_green" />
+
+
+    <LinearLayout
+        android:paddingStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/preBtnNP"
+        android:layout_toEndOf="@+id/songImgNP"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/songNameNP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center|start"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/song_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/artistNP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center|start"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/artist_name"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

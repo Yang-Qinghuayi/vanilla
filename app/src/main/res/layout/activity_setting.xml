@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.alterac.blurkit.BlurLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:blurkit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/blurLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    blurkit:blk_blurRadius="25"
+    android:background="#fdfdf5"
+    blurkit:blk_downscaleFactor="0.01"
+    blurkit:blk_fps="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        tools:context=".activity.SettingActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/coolGreenTheme"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/circle_icon"
+                android:tint="@color/cool_green" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/coolRedTheme"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/circle_icon"
+                android:tint="@color/cool_red" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/coolCyanTheme"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/circle_icon"
+                android:tint="@color/mask_cyan" />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/coolBlueTheme"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/circle_icon"
+                android:tint="@color/blue" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/coolBlackTheme"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/circle_icon"
+                android:tint="@color/black" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/navFeedback"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_background"
+            android:drawableLeft="@drawable/feedback_icon"
+            android:text="@string/feedback"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/navAbout"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_background"
+            android:drawableLeft="@drawable/about_icon"
+            android:text="@string/about"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat,RtlHardcoded" />
+
+        <LinearLayout
+            android:id="@+id/kiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="@color/mask_blue"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="10dp"
+                android:text="FROM 杨青花一"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="10dp"
+                android:text="无云生岭上,有月落波心"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</io.alterac.blurkit.BlurLayout>

@@ -1,0 +1,45 @@
+[versions]
+agp = "8.1.0"
+android-mail = "1.6.2"
+blurimageviewlib = "2.0.1"
+blurkit = "1.1.1"
+compiler = "4.14.2"
+glide = "4.15.1"
+google-material = "1.4.0"
+gson = "2.10.1"
+kotlin = "1.8.21"
+core-ktx = "1.9.0"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+material = "1.9.0"
+constraintlayout = "2.1.4"
+media = "1.6.0"
+room-runtime = "2.5.2"
+viewpager2 = "1.0.0"
+
+[libraries]
+android-activation = { module = "com.sun.mail:android-activation", version.ref = "android-mail" }
+android-mail = { module = "com.sun.mail:android-mail", version.ref = "android-mail" }
+androidx-media = { module = "androidx.media:media", version.ref = "media" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room-runtime" }
+androidx-viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+blurimageviewlib = { module = "com.wingjay:blurimageviewlib", version.ref = "blurimageviewlib" }
+blurkit = { module = "io.alterac.blurkit:blurkit", version.ref = "blurkit" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+material-v140 = { module = "com.google.android.material:material", version.ref = "google-material" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

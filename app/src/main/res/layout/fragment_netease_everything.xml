@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.frag.NeteaseEverything"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_background"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/NetEaseBtnNF"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/netease_icon"
+            app:tint="@color/cool_red"
+            android:contentDescription="@string/neteaseBtn" />
+
+        <ImageButton
+            android:id="@+id/RecommendedBtnNF"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/recommended_icon"
+            app:tint="@color/cool_green"
+            android:contentDescription="@string/localBtn" />
+
+        <ImageButton
+            android:id="@+id/RadioBtnNF"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/radio_icon"
+            />
+
+        <ImageButton
+            android:id="@+id/BrowseBtnNF"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/globe_icon"
+            app:tint="@color/cool_green"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/rounded_background"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/LibraryNF"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription"
+            android:src="@drawable/library_icon"
+             />
+
+        <ImageButton
+            android:id="@+id/CloudDriveNF"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription"
+            android:src="@drawable/cloud_icon"
+            app:tint="@color/Gradient_white" />
+
+        <ImageButton
+            android:id="@+id/RecentlyPlayedNF"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription"
+            android:src="@drawable/recent_icon"
+            app:tint="@color/mask_pink" />
+
+        <ImageButton
+            android:id="@+id/SearchNF"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/search_icon"
+            app:tint="@color/cool_green"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+
+</LinearLayout>

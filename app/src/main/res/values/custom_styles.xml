@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="curved">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="curved_photo">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="style_rounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">125dp</item>
+    </style>
+</resources>

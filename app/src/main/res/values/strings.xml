@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">枫叶</string>
+    <string name="shuffle_btn">Shuffle</string>
+    <string name="favourites_btn">听最喜欢的歌</string>
+    <string name="playlist_btn">我的播放列表</string>
+    <string name="total_songs">Total Songs</string>
+    <string name="world_of_music">天涯何处觅知音</string>
+    <string name="song_name">一曲肝肠断</string>
+    <string name="artist_name">轻羽此去莫留连</string>
+    <string name="back_btn">Back</string>
+    <string name="start_tv">00:00</string>
+    <string name="end_tv">Loading…</string>
+    <string name="repeat_btn">Repeat</string>
+    <string name="equalizer_btn">Equalizer</string>
+    <string name="timer_btn">Timer</string>
+    <string name="share_btn">Share</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="app_icon">Icon</string>
+    <string name="text_nav">废沼夜来秋水满 茂林深处晚莺啼</string>
+    <string name="feedback">反馈</string>
+    <string name="settings">设置</string>
+    <string name="about">关于</string>
+    <string name="exit">离开</string>
+    <string name="song_album">Song Album</string>
+    <string name="min_15">15 Minutes</string>
+    <string name="min_30">30 Minutes</string>
+    <string name="min_60">60 Minutes</string>
+    <string name="search_view">Search View</string>
+    <string name="song_img">Song Image</string>
+    <string name="playlist_name">歌单名称</string>
+    <string name="playlist_delete">Delete</string>
+    <string name="user_name">创建者</string>
+    <string name="add_song">添加</string>
+    <string name="remove_all">清空</string>
+    <string name="search_song">搜索歌曲</string>
+    <string name="topic_feedback">Topic i.e. Suggestion, Error, etc.</string>
+    <string name="email_feedback">Email Address(Optional)</string>
+    <string name="send">发送</string>
+    <string name="set_theme">Set Theme</string>
+    <string name="sort_by">Sort By</string>
+    <string name="version_name">Developed By杨青花一</string>
+    <string name="author">BY 杨青花一</string>
+    <string name="playlistSongNum">0 首</string>
+    <string name="whatsNew">可以自由换主题色 </string>
+    <string name="addPlaylist">加入到歌单 </string>
+    <string name="deleteForever">永久删除 </string>
+    <string name="playNext">下一首播放 </string>
+    <string name="deleteFromPlaylist">从歌单中移除</string>
+    <string name="hotPlaylists">推荐歌单</string>
+    <string name="spotifyBtn">spotify</string>
+    <string name="qqBtn">QQ音乐</string>
+    <string name="neteaseBtn">网易云</string>
+    <string name="localBtn">本地</string>
+    <string name="netease_user_name">杨青花一</string>
+    <string name="following_ne">6 Following</string>
+    <string name="followed_ne">6 Followed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="login">请登录</string>
+    <string name="playAll">播放全部</string>
+
+</resources>

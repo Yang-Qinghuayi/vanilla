@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <attr name="themeColor" format="color" />
+
+    <!--    用于启动屏-->
+    <style name="splash_screen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/art_start</item>
+        <item name="colorPrimary">#3C686E</item>
+    </style>
+    <!--用于主页的抽屉-->
+    <style name="leaves" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#3C686E</item>
+    </style>
+
+    <!--    for activity-->
+    <style name="coolGreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#3C686E</item>
+        <item name="themeColor">@color/cool_green</item>
+        <item name="android:statusBarColor">?attr/themeColor</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="coolBlue" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#3C686E</item>
+        <item name="themeColor">@color/cool_blue</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:statusBarColor">?attr/themeColor</item>
+    </style>
+
+    <style name="coolRed" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorPrimary">#3C686E</item>
+        <item name="themeColor">@color/cool_red</item>
+        <item name="android:statusBarColor">?attr/themeColor</item>
+    </style>
+
+    <style name="coolWhite" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#3C686E</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="themeColor">@color/cool_white</item>
+        <item name="android:statusBarColor">?attr/themeColor</item>
+    </style>
+
+    <style name="coolBlack" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorPrimary">#3C686E</item>
+        <item name="themeColor">@color/black</item>
+        <item name="android:statusBarColor">?attr/themeColor</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>

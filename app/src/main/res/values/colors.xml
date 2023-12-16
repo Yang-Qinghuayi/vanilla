@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#003153</color>
+    <color name="blue_light">#1F568E</color>
+    <color name="bordeaux_red">#4c0013</color>
+    <color name="primary_cyan">#23b7b6</color>
+
+    <color name="mask_cyan">#04988a</color>
+    <color name="mask_pink">#b3566c</color>
+    <color name="mask_blue">#70b2c6</color>
+
+    <color name="mask_green">#08421e</color>
+
+
+    <color name="cool_blue">#22272e</color>
+    <color name="cool_green">#689F38</color>
+    <color name="qq_green">#2dad70</color>
+    <color name="cool_red">#4c0013</color>
+    <color name="cool_white">#E6DFE0</color>
+    <color name="black">#131D1C</color>
+
+    <color name="Golden_yellow">#ffecb3</color>
+    <color name="Gradient_white">#e9dbc6</color>
+    <color name="android_green">#d9e7cb</color>
+</resources>
